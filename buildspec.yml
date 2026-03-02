@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "uploading website files to s3"
+      - aws s3 sync . s3://static-website-poc23 --delete
+      - echo " invalidating cloudfront cahe"
+      - aws cloudfront create-invelidation --distribution-id E302XY06SVW866 --paths "/*"
