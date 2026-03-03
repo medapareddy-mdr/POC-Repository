@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Demo POC  Static Website hosting on AWS final stage is successfully deployed</title>
     <meta charset="UTF-8">
+    <title>Demo POC - Static Website Hosting on AWS using AWS services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -12,15 +13,21 @@
             color: white;
             text-align: center;
         }
+
         header {
-            padding: 40px 0;
+            padding: 60px 20px;
         }
+
         h1 {
-            font-size: 40px;
+            font-size: 42px;
+            margin-bottom: 10px;
         }
+
         p {
             font-size: 20px;
+            margin: 10px 0;
         }
+
         .btn {
             margin-top: 20px;
             padding: 12px 25px;
@@ -29,19 +36,27 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            color: white;
+            transition: background 0.3s ease;
         }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
         footer {
-            margin-top: 100px;
+            margin-top: 120px;
             padding: 20px;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Welcome to POC-23</h1>
-    <p>POC-23 Static Website Hosted on S3 and cloudfrond using codepipeline</p>
+    <p>POC-23 Static Website hosted on S3 and CloudFront using CodePipeline</p>
     <button class="btn" onclick="showMessage()">Click Me</button>
 </header>
 
@@ -51,7 +66,7 @@
 
 <script>
     function showMessage() {
-        alert("Deployment Successful! ");
+        alert("Deployment Successful!");
     }
 </script>
 
