@@ -1,0 +1,31 @@
+POC -26:  
+
+ 
+
+Event-Driven Automation with S3 and Lambda 
+
+Background: Serverless functions are powerful for processing storage events. 
+
+Objective: Trigger a Lambda when a file is uploaded to S3. 
+
+Tools & Services: 
+
+• Lambda, S3, CloudWatch, IAM 
+
+Implementation Steps: 
+
+1. Create a Lambda to process or log file metadata. 
+
+2. Configure S3 to trigger on PUT event. 
+
+3. Upload file to S3 and observe logs. 
+
+4. Use IAM roles for permissioning. 
+
+Hints: 
+
+• Log full event structure to understand payload. 
+
+Expected Outcome: 
+
+• Lambda executes automatically after file upload. :
